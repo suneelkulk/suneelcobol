@@ -9,7 +9,6 @@ pipeline {
    stage ('Build') {
     steps {
      echo 'Running Build Automation'
-     sh 'make'
      archiveArtifacts artifacts: 'dist/cobprogs.zip'
     }
    }
