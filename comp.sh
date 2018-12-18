@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/centos/gnucobol-3.0-rc1
+export PATH=$PATH:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/centos/.local/bin:/home/centos/bin
 cobc -x intro1.cbl
