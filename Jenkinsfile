@@ -9,9 +9,9 @@ pipeline {
    stage ('Build')     {
     steps {
      echo 'Running Build Automation'
-     sh 'cobc -x intro1.cbl'
-     sh 'scp intro1 /home/centos/suneelcobolmasterbranch/'
-    }
-   }
+      sh'./comp.sh build --no-daemon'
+      sh'scp intro1 /home/centos/suneelcobolmasterbranch/'
+          }
+                        }
   }
  }
