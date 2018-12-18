@@ -9,7 +9,7 @@ pipeline {
    stage ('Build')     {
     steps {
      echo 'Running Build Automation'
-      sh 'chmod x comp.sh'
+      sh 'sudo chmod +x comp.sh'
       sh'./comp.sh build --no-daemon'
       sh'scp intro1 /home/centos/suneelcobolmasterbranch/'
           }
