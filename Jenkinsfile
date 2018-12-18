@@ -9,9 +9,9 @@ pipeline {
    stage ('Build')     {
     steps {
      echo 'Installing Open Cobol'
-      sh ' yum -y install libgmp3-dev libtool libdb-dev ncurses-dev libncurses-dev'
-      sh 'sudo  yum install gmp gmp-devel libtool ncurses ncurses-devel ncurses-libs make'
-      sh 'sudo  yum install libdbi libdbi-devel libtool-ltdl libtool-ltdl-devel db4 db4-devel'
+      sh 'sudo yum -y install libgmp3-dev libtool libdb-dev ncurses-dev libncurses-dev'
+      sh 'sudo yum install gmp gmp-devel libtool ncurses ncurses-devel ncurses-libs make'
+      sh 'sudo yum install libdbi libdbi-devel libtool-ltdl libtool-ltdl-devel db4 db4-devel'
       sh 'sudo ./configure --without-db'
       sh 'sudo make'
       sh 'sudo make check'
