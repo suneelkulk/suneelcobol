@@ -1,0 +1,6 @@
+#                             -*- compilation -*-
+787. run_functions.at:4145: testing UDF with recursion ...
+./run_functions.at:4199: $COMPILE prog.cob
+./run_functions.at:4201: $COBCRUN_DIRECT ./prog
+Binary files - and /home/centos/gnucobol-3.0-rc1/tests/testsuite.dir/at-groups/787/stdout differ
+787. run_functions.at:4145: 787. UDF with recursion (run_functions.at:4145): expected failure (run_functions.at:4201)

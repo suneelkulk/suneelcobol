@@ -1,0 +1,19 @@
+#                             -*- compilation -*-
+83. syn_definition.at:847: testing Redefinition of label and variable names ...
+./syn_definition.at:873: $COMPILE_ONLY -std=cobol2014 prog.cob
+--- -	2018-12-18 05:54:43.568811149 +0000
++++ /home/centos/gnucobol-3.0-rc1/tests/testsuite.dir/at-groups/83/stderr	2018-12-18 05:54:43.567800308 +0000
+@@ -1,5 +1,9 @@
++prog.cob:7: warning: redefinition of 'WORD'
++prog.cob:3: warning: 'WORD' previously defined here
+ prog.cob: in section 'main':
+-prog.cob:17: error: user-defined word re-used with different type does not conform to COBOL 2014
+-prog.cob:17: error: redefinition of 'word' as label-name
+-prog.cob:7: error: 'word' previously defined here as data-name
++prog.cob:12: error: 'WORD' is ambiguous; needs qualification
++prog.cob:3: error: 'WORD' defined here
++prog.cob:7: error: 'WORD' defined here
++prog.cob:17: error: redefinition of 'WORD'
++prog.cob:3: error: 'WORD' previously defined here
+ 
+83. syn_definition.at:847: 83. Redefinition of label and variable names (syn_definition.at:847): expected failure (syn_definition.at:873)

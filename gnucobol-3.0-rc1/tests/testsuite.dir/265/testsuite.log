@@ -1,0 +1,21 @@
+#                             -*- compilation -*-
+265. syn_misc.at:4991: testing Constant Expressions (2) ...
+./syn_misc.at:5037: $COMPILE_ONLY prog.cob
+--- -	2018-12-18 05:54:54.210538198 +0000
++++ /home/centos/gnucobol-3.0-rc1/tests/testsuite.dir/at-groups/265/stderr	2018-12-18 05:54:54.208728003 +0000
+@@ -1,10 +1,9 @@
+-prog.cob:13: warning: expression '115' EQUALS '200' is always FALSE
+-prog.cob:14: warning: expression '200' EQUALS '115' is always FALSE
++prog.cob:14: warning: expression '115' EQUALS '200' is always FALSE
+ prog.cob:14: warning: expression is always FALSE
+-prog.cob:19: warning: expression '115' EQUALS '15' is always FALSE
+-prog.cob:20: warning: expression '115' EQUALS '115' is always TRUE
+-prog.cob:20: warning: expression is always TRUE
+ prog.cob:22: warning: expression '115' LESS THAN '16' is always FALSE
+ prog.cob:24: error (ignored): offset of 'var' out of bounds: -98
+ prog.cob:25: warning: expression '115' GREATER THAN '16' is always TRUE
++prog.cob:24: warning: expression '115' EQUALS '15' is always FALSE
++prog.cob:24: warning: expression '115' EQUALS '115' is always TRUE
++prog.cob:24: warning: expression is always TRUE
+ 
+265. syn_misc.at:4991: 265. Constant Expressions (2) (syn_misc.at:4991): expected failure (syn_misc.at:5037)

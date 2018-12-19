@@ -1,0 +1,20 @@
+#                             -*- compilation -*-
+268. syn_misc.at:5135: testing Missing imperative statements ...
+./syn_misc.at:5200: $COMPILE_ONLY prog.cob
+--- -	2018-12-18 05:54:54.318509996 +0000
++++ /home/centos/gnucobol-3.0-rc1/tests/testsuite.dir/at-groups/268/stderr	2018-12-18 05:54:54.316727269 +0000
+@@ -7,9 +7,10 @@
+ prog.cob:29: warning: expression '1' EQUALS '1' is always TRUE
+ prog.cob:32: error: IF without imperative statement used
+ prog.cob:33: error: IF without imperative statement used
+-prog.cob:38: error: WHEN OTHER without imperative statement used
++prog.cob:39: error: syntax error, unexpected END-EVALUATE
+ prog.cob:41: warning: expression '1' NOT EQUAL '3' is always TRUE
+ prog.cob:41: warning: PERFORM NEVER since UNTIL is always TRUE
+-prog.cob:46: error: WHEN without imperative statement used
+-prog.cob:52: error: WHEN without imperative statement used
++prog.cob:47: error: syntax error, unexpected END-EVALUATE
++prog.cob:51: error: syntax error, unexpected OTHER
++prog.cob:53: error: syntax error, unexpected END-EVALUATE
+ 
+268. syn_misc.at:5135: 268. Missing imperative statements (syn_misc.at:5135): expected failure (syn_misc.at:5200)

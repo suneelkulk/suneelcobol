@@ -1,0 +1,17 @@
+#                             -*- compilation -*-
+481. run_misc.at:443: testing EXTERNAL data item size mismatch ...
+./run_misc.at:510: $COMPILE_MODULE callee.cob
+./run_misc.at:511: $COMPILE bigger.cob
+./run_misc.at:512: $COBCRUN_DIRECT ./bigger
+--- -	2018-12-18 05:55:14.753750967 +0000
++++ /home/centos/gnucobol-3.0-rc1/tests/testsuite.dir/at-groups/481/stderr	2018-12-18 05:55:14.751588415 +0000
+@@ -1,4 +1,4 @@
+-libcob: callee.cob:6: warning: EXTERNAL item 'WRK-VAR' previously allocated with size 10, requested size is 8
+-libcob: callee.cob:7: warning: EXTERNAL item 'EXT-VAR' previously allocated with size 10, requested size is 8
+-libcob: callee.cob:8: warning: EXTERNAL item 'EXT-VAR' previously allocated with size 10, requested size is 8
++libcob: bigger.cob:12: warning: EXTERNAL item 'WRK_VAR' previously allocated with size 10, requested size is 8
++libcob: bigger.cob:12: warning: EXTERNAL item 'COB_VAR' previously allocated with size 10, requested size is 8
++libcob: bigger.cob:12: warning: EXTERNAL item 'EXT_VAR' previously allocated with size 10, requested size is 8
+ 
+Binary files /dev/null and /home/centos/gnucobol-3.0-rc1/tests/testsuite.dir/at-groups/481/stdout differ
+481. run_misc.at:443: 481. EXTERNAL data item size mismatch (run_misc.at:443): expected failure (run_misc.at:512)
