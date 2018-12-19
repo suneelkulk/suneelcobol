@@ -1,10 +1,10 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. intro1.
+       PROGRAM-ID. acctcreat.
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
-           SELECT NINJAI-FILE  ASSIGN TO "NINJAIN.CSV"
+           SELECT ACCTIN-FILE  ASSIGN TO "CUST-FILE.CSV"
                                ORGANIZATION IS LINE SEQUENTIAL
                                ACCESS MODE IS SEQUENTIAL
                                FILE STATUS IS FILE-STATUS.
