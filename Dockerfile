@@ -26,4 +26,4 @@ RUN ldconfig
 RUN cobc -V
 RUN export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 EXPOSE 8080
-CMD tail -f /dev/null
+CMD ./intro1
