@@ -20,5 +20,7 @@ pipeline {
   			script {
        				sh 'docker build -t suneelkulk/col .'
               sh 'docker run -d suneelkulk/col
+        }
+    }
   }
  }
