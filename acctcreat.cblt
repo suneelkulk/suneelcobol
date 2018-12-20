@@ -76,8 +76,8 @@
                DISPLAY "OPEN INPUT FAILED FILE STATUS =" FILE-STATUS
            END-IF.
 
-           CLOSE NINJAI-FILE
-                 NINJAO-FILE.
+           CLOSE ACCTIN-FILE
+                 ACCTOUT-FILE.
             
            STOP RUN. 
             
