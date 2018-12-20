@@ -11,5 +11,4 @@ comp.sh
 intro1.cbl
 ninjafile
 ninjafile.cbl
-.dockerignore
 *.md
