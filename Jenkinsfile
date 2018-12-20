@@ -14,5 +14,11 @@ pipeline {
       sh'scp intro1 /home/centos/suneelcobolmasterbranch/'
           }
                         }
+    
+       stage('docker images code') { 
+ 		steps {
+  			script {
+       				sh 'docker build -t suneelkulk/col .'
+              sh 'docker run -d suneelkulk/col
   }
  }
