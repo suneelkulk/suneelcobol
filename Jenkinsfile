@@ -19,7 +19,7 @@ pipeline {
  		steps {
   			script {
        				sh 'docker build -p 8090:8090 -t suneelkulk/col .'
-              sh 'docker run -d suneelkulk/col
+              sh 'docker run -d suneelkulk/col'
         }
     }
   }
