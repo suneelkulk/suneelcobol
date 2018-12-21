@@ -15,7 +15,7 @@
                                FILE STATUS IS FILE-STATUS. 
        DATA DIVISION.
        FILE SECTION.
-       FD   ACCTIN-FILE  RECORD CONTAINS  CHARACTERS
+       FD   ACCTIN-FILE  RECORD CONTAINS 100 CHARACTERS
                          LABEL RECORDS ARE STANDARD.
                           
        01 CUST-REC           PIC X(100).
@@ -29,17 +29,17 @@
        01 FILE-STATUS          PIC X(02).
        01 EOF                  PIC X(01) VALUE "N".
        01 WH-HEADER.
-          05 WH-CUST             PIC X(09) VALUE "CUST-NAME".
-          05 FILLER              PIC X(15) VALUE SPACES.
-          05 WH-PAN              PIC X(10) VALUE "PAN NUMBER".
-          05 FILLER              PIC X(05) VALUE SPACES.
-          05 WH-AADHAR           PIC X(06) VALUE "AADHAR".
-          05 FILLER              PIC X(14) VALUE SPACES.
-          05 WH-CITY             PIC X(04) VALUE "CITY".
-          05 FILLER              PIC X(16) VALUE SPACES.
-          05 WH-ADDR             PIC X(07) VALUE "ADDRESS".
-          05 FILLER              PIC X(04) VALUE SPACES.
-          05 WH-ACCTNUM          PIC X(10) VALUE "ACCOUNT.NO"
+          05 WH-CUST           PIC X(09) VALUE "CUST-NAME".
+          05 FILLER            PIC X(15) VALUE SPACES.
+          05 WH-PAN            PIC X(10) VALUE "PAN NUMBER".
+          05 FILLER            PIC X(05) VALUE SPACES.
+          05 WH-AADHAR         PIC X(06) VALUE "AADHAR".
+          05 FILLER            PIC X(14) VALUE SPACES.
+          05 WH-CITY           PIC X(04) VALUE "CITY".
+          05 FILLER            PIC X(16) VALUE SPACES.
+          05 WH-ADDR           PIC X(07) VALUE "ADDRESS".
+          05 FILLER            PIC X(04) VALUE SPACES.
+          05 WH-ACCTNUM        PIC X(10) VALUE "ACCOUNT.NO".
           
        01 WS-DETAIL.
           05 WS-CUST             PIC X(20) VALUE SPACES.
@@ -50,7 +50,7 @@
           05 WS-ACCNUM           PIC X(10) VALUE SPACES.
           
        01 WK-ACCT-NUM.
-          05 WK-CNTRY            PIC X(02) VALUE "91"
+          05 WK-CNTRY            PIC X(02) VALUE "91".
           05 WK-CITY             PIC X(03).
           05 WK-BRNCH            PIC X(03).
           05 WK-RANDOM           PIC X(02).
