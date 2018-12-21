@@ -59,7 +59,7 @@
            INITIALIZE    WS-DETAIL
                          CUST-REC
                          ACCOUNT-REC.
-           DISPLAY "ACCOUNT CREATION IN PROGRESS".
+           DISPLAY "Thanks to COE team".           
            OPEN INPUT ACCTIN-FILE.
            IF FILE-STATUS = "00"
                DISPLAY " SUCCESSFUL OPEN OF INPUT FILE"
